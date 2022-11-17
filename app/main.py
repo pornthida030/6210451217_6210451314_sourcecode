@@ -197,7 +197,6 @@ def webhook():
         else:
             ReplyMessage(Reply_token,Reply_message,Channel_access_token)
 
-        ## เขียนต่อเกี่ยวกับที่จะส่งต่อ
         return request.json,200
     elif request.method=='GET':
         return "this is method GET!!",200
