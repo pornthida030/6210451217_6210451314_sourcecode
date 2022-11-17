@@ -64,9 +64,9 @@ def webhook():
                 # Convert files m4a to wav
                 m4a_filename=file_path
                 wav_filename=os.path.abspath('./file_keep_wav.wav')
+
                 # For Window in running program
-                
-                AudioSegment.converter=os.path.abspath("./<Folder Name>/bin/ffmpeg.exe") #เปลี่ยน <Folder name> เป็น Directory ของไฟล์ ffmpeg
+                # AudioSegment.converter=os.path.abspath("./<Folder Name>/bin/ffmpeg.exe") #เปลี่ยน <Folder Name> เป็น Directory ของไฟล์ ffmpeg
                 path=Path(m4a_filename)
                 if path.is_file():
                     if m4a_filename is not None:
